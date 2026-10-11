@@ -16,6 +16,24 @@ st.markdown("""
 
 <style>
 
+/* Etiquetas multiselect compatibles con data-tag */
+[data-testid="stMultiSelect"] [data-tag="tag"],
+[data-testid="stSidebar"] [data-tag="tag"],
+[data-tag="tag"] {
+    background: #7C3AED !important;
+    background-color: #7C3AED !important;
+    border-color: #7C3AED !important;
+    color: #FFFFFF !important;
+}
+
+/* Texto e iconos blancos */
+[data-tag="tag"] *,
+[data-tag="tag"] button,
+[data-tag="tag"] svg {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
             /* Forzar violeta en las etiquetas multiselect */
 div[data-testid="stMultiSelect"] span[data-baseweb="tag"],
 div[data-testid="stMultiSelect"] [data-baseweb="tag"],
