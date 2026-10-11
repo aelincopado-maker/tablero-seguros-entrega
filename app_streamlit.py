@@ -13,7 +13,25 @@ st.set_page_config(page_title="Tablero de seguros | Analítica", layout="wide")
 
 # Identidad visual: modo oscuro y acentos violetas.
 st.markdown("""
+
 <style>
+
+            /* Forzar violeta en las etiquetas multiselect */
+div[data-testid="stMultiSelect"] span[data-baseweb="tag"],
+div[data-testid="stMultiSelect"] [data-baseweb="tag"],
+div[data-testid="stSidebar"] [data-baseweb="tag"] {
+    background: #7C3AED !important;
+    background-color: #7C3AED !important;
+    border-color: #7C3AED !important;
+    color: white !important;
+}
+
+div[data-testid="stMultiSelect"] [data-baseweb="tag"] *,
+div[data-testid="stSidebar"] [data-baseweb="tag"] * {
+    color: white !important;
+    fill: white !important;
+}
+
 /* Filtros violeta: multiselect, selectbox, slider y controles del cotizador. */
 [data-testid="stSidebar"] [data-baseweb="select"] > div,
 [data-testid="stSidebar"] [data-baseweb="select"] [role="combobox"],
